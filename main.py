@@ -4,7 +4,7 @@ import ImageUtils
 import FileUtils
 import random
 import os 
-
+import subprocess
 
 configuration = dict()
 
@@ -43,8 +43,8 @@ def prepareData(raw_dir):
 def main():
     #Step 1 prepare data
     prepareData(configuration['raw_data'])
-    #Step 2
-
+    #Step 2 run Training
+    subprocess.run(['python','Train.py'])
 
 
 main()
