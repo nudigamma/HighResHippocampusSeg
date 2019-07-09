@@ -15,7 +15,7 @@ configuration = {'running_dir':'/home/nadim/build/test','images':"images","masks
 
 def prepareData(raw_dir):
     ''' after unziping the downloaded data this beast of a function convert 3D MRI to 2D MRI images and the training dir structures'''
-     # create directories
+    # create directories
     # the directory images contains the MRI images
     # the directory masks conatins the true labels for MRI Images 
     FileUtils.createDirectories(configuration['running_dir'],configuration['images'])
